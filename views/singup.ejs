@@ -1,0 +1,39 @@
+<%- include('partials/header', { title: 'Inicio de Sesión - ProJobs' }) %>
+    <div class="container">
+        <div class="image-section">
+            <img class="logo-img" src="/img/logotipo.png" alt="Pro Jobs Logo">
+        </div>
+        <div class="login-section">
+            <img class="logo-img-mobile" src="/img/logotipo.png" alt="Pro Jobs Logo">
+            <form action="/login" method="POST" class="login-form">
+                <h2>Iniciar Sesión</h2>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="usuario@gmail.com" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+                <div class="login-options">
+                    <button type="button" class="google-login">Iniciar sesión con <span class="google-logo">G</span></button>
+                </div>
+                <br>
+                <div class="input-group">
+                    <button type="submit" class="btn-login">Login</button>
+                </div>
+                <div class="input-group">
+                    <a href="/formulario" class="register-btn">Regístrate</a>
+                </div>
+                <div class="remember-recover">
+                    <label>
+                        <input type="checkbox" name="remember"> Recordar Contraseña
+                    </label>
+                    <a href="#">Recuperar contraseña</a>
+                </div>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/?locale=es_LA"><img src="/img/face.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="/img/insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+<%- include('partials/footer') %>
