@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title || 'ProJobs' %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/"><img src="/img/logotipo.png" alt="ProJobs"></a>
+            </div>
+            <button class="hamburger" aria-label="Menu">&#9776;</button>
+            <div class="barbus">
+                <input type="search" placeholder="Buscar" class="search-bar">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/about">¿Quiénes somos?</a></li>
+                    <li><a href="/services">Nuestros Servicios</a></li>
+                    <li><a href="/contact">Contáctenos</a></li>
+                </ul>
+                <a href="/singup"><button class="register-btn">Sing up</button></a>
+                <a href="/formulario"><button class="register-btn">Regístrate</button></a>
+            </nav>
+        </div>
+    </header>
